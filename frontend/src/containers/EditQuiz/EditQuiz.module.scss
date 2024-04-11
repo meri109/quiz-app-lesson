@@ -1,0 +1,24 @@
+.AddQuestion{
+    $size: 70px;
+    $bgcolor:yellowgreen;
+    width: $size;
+    height: $size;
+    background-color: $bgcolor;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    border-radius: 50%;
+    margin: auto;
+    cursor: pointer;
+    transition-duration: 300ms;
+    &:hover{
+        background-color: lighten($color: $bgcolor, $amount: 20%);
+    }
+    .Plus{
+        position: absolute;
+        font-size: 60px;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
